@@ -13,16 +13,16 @@ body {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #595959;
-  background: #FFFFFF;
+  color: #000000;
+  background: #ffffff;
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #0056B8;
-  color: #FFFFFF;
+  background-color: #0057b8;
+  color: #ffffff;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #0056B8;
-  color: #FFFFFF;
+  background-color: #0057b8;
+  color: #ffffff;
 }
 #es-rc #es-rc-content * {
   box-sizing: border-box;
@@ -43,6 +43,14 @@ body {
   font-size: 22px;
   font-weight: 700;
 }
+#es-rc #es-rc-content .es-section {
+  margin-block: 32px;
+}
+@media (min-width: 720px) {
+  #es-rc #es-rc-content .es-section {
+    margin-block: 64px;
+  }
+}
 #es-rc #es-rc-content .es-kv__left {
   text-align: center;
   margin-block: 2em;
@@ -60,8 +68,8 @@ body {
   margin: auto;
 }
 #es-rc #es-rc-content .es-kv__title {
-  background-color: #79CC96;
-  color: #FFFFFF;
+  background-color: #79cc96;
+  color: #ffffff;
   padding: 16px;
 }
 #es-rc #es-rc-content .es-kv__textWrapper {
@@ -73,8 +81,8 @@ body {
   padding: 32px;
 }
 #es-rc #es-rc-content .es-kv__info {
-  background-color: #0056B8;
-  color: #FFFFFF;
+  background-color: #0057b8;
+  color: #ffffff;
   text-align: center;
   padding: 1em 3em;
   border-radius: 12px 0;
@@ -116,8 +124,8 @@ body {
   height: 100%;
 }
 #es-rc #es-rc-content .es-features__title {
-  background-color: #79CC96;
-  color: #FFFFFF;
+  background-color: #79cc96;
+  color: #ffffff;
   padding: 16px;
   text-align: center;
   width: 100%;
@@ -156,8 +164,8 @@ body {
 #es-rc #es-rc-content .es-formula .es-header {
   text-align: center;
   padding: 16px;
-  background-color: #79CC96;
-  color: #FFFFFF;
+  background-color: #79cc96;
+  color: #ffffff;
 }
 #es-rc #es-rc-content .es-formula__bg {
   position: absolute;
@@ -181,7 +189,7 @@ body {
           backdrop-filter: blur(4px);
 }
 #es-rc #es-rc-content .es-formula__textTitle {
-  color: #79CC96;
+  color: #79cc96;
   font-weight: 700;
   width: 85%;
   max-width: 300px;
@@ -194,7 +202,7 @@ body {
   text-align: center;
 }
 #es-rc #es-rc-content .es-formula__plus {
-  color: #79CC96;
+  color: #79cc96;
   font-size: 44px;
   font-weight: 700;
   text-align: center;
@@ -222,8 +230,8 @@ body {
   gap: 20px;
 }
 #es-rc #es-rc-content .es-cross__odkryj {
-  background-color: #0056B8;
-  color: #FFFFFF;
+  background-color: #0057b8;
+  color: #ffffff;
   font-size: 22px;
   text-align: center;
   padding: 8px 32px;
@@ -234,7 +242,7 @@ body {
   margin: 0 auto 8px auto;
 }
 #es-rc #es-rc-content .es-cross .es-header {
-  color: #79CC96;
+  color: #79cc96;
 }
 #es-rc #es-rc-content .es-cross .es-header--bold {
   display: block;
@@ -282,8 +290,8 @@ body {
   max-height: 240px;
 }
 #es-rc #es-rc-content .es-cross__name {
-  background-color: #79CC96;
-  color: #FFFFFF;
+  background-color: #79cc96;
+  color: #ffffff;
   padding: 8px 20px;
   font-weight: 700;
   text-align: center;
@@ -293,12 +301,12 @@ body {
 }
 #es-rc #es-rc-content .es-cross__desc {
   text-align: center;
-  color: #595959;
+  color: #000000;
 }
 #es-rc #es-rc-content .es-products .es-header {
   text-align: center;
   padding: 32px;
-  color: #0056B8;
+  color: #0057b8;
 }
 #es-rc #es-rc-content .es-products .es-header--bold {
   display: block;
@@ -309,7 +317,7 @@ body {
 #es-rc #es-rc-content .es-products__bg {
   width: 100%;
 }
-#es-rc #es-rc-content .es-products__bg img {
+#es-rc #es-rc-content .es-products__bg__img {
   width: 100%;
 }
 #es-rc #es-rc-content .es-products__wrapper {
@@ -320,7 +328,7 @@ body {
   justify-content: center;
 }
 #es-rc #es-rc-content .es-products__single {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 32px;
   border-radius: 0px 8px;
   text-align: center;
@@ -330,30 +338,34 @@ body {
   font-weight: 700;
 }
 #es-rc #es-rc-content .es-products__single:nth-child(1) {
-  background-color: #FAB283;
+  background-color: #79cc96;
 }
 #es-rc #es-rc-content .es-products__single:nth-child(2) {
-  background-color: #79CC96;
+  background-color: #3fb3ee;
 }
 #es-rc #es-rc-content .es-products__single:nth-child(3) {
-  background-color: #3FB3EE;
+  background-color: #f1aeac;
 }
-#es-rc #es-rc-content .es-ekspert__left img {
+#es-rc #es-rc-content .es-ekspert__left {
+  border-radius: 0 20px 0 0;
+  overflow: hidden;
+}
+#es-rc #es-rc-content .es-ekspert__left__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 #es-rc #es-rc-content .es-ekspert__logo {
-  padding-block: 40px;
+  padding-top: 40px;
 }
-#es-rc #es-rc-content .es-ekspert__logo img {
-  max-width: 120px;
+#es-rc #es-rc-content .es-ekspert__logo__img {
+  max-width: 150px;
 }
 #es-rc #es-rc-content .es-ekspert__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 32px;
+  gap: 16px;
   padding: 16px;
   max-width: 444px;
   margin: auto;
@@ -372,7 +384,7 @@ body {
   box-shadow: 1px 1px 15px 3px rgba(0, 0, 1, 0.1);
 }
 #es-rc #es-rc-content .es-ekspert__icon {
-  background-color: #0056B8;
+  background-color: #0057b8;
   padding: 8px;
   border-radius: 8px;
   width: 80px;
@@ -460,7 +472,7 @@ body {
     scale: 1.1;
   }
   #es-rc #es-rc-content .es-cross__single:hover .es-cross__name {
-    background-color: #0056B8;
+    background-color: #0057b8;
   }
   #es-rc #es-rc-content .es-cross__desc {
     height: 4em;
