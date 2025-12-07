@@ -566,6 +566,39 @@ body {
     &__single:nth-child(3) {
       background-color: $color-pink;
     }
+
+    @media (min-width: 720px) {
+      display: flex;
+      flex-direction: row-reverse;
+
+      &__bg {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .es-header {
+        padding-inline: unset;
+      }
+
+      &__single {
+        border-radius: 0 $padding-XS;
+        font-size: 18px;
+      }
+
+      &__left {
+        width: 46%;
+      }
+
+      &__right {
+        width: 54%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
   }
 
   .es-ekspert {
@@ -618,6 +651,22 @@ body {
       height: 80px;
       display: grid;
       place-items: center;
+    }
+
+    @media (min-width: 720px) {
+      display: flex;
+
+      &__left {
+        width: 54%;
+        img {
+          height: 100%;
+          position: right;
+        }
+      }
+
+      &__right {
+        width: 46%;
+      }
     }
   }
 
@@ -723,63 +772,5 @@ body {
     .es-features__text {
       font-size: 1.5em;
     }
-
-    .es-products {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    .es-products__bg {
-      height: 100%;
-    }
-
-    .es-products__bg img {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .es-products .es-header {
-      padding-inline: unset;
-    }
-
-    .es-products__single {
-      border-radius: 0 $padding-XS;
-      font-size: 18px;
-    }
-
-    .es-products__left {
-      width: 46%;
-    }
-
-    .es-products__right {
-      width: 54%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .es-ekspert {
-      display: flex;
-    }
-
-    .es-ekspert__left {
-      width: 54%;
-    }
-
-    .es-ekspert__right {
-      width: 46%;
-    }
-
-    .es-ekspert__left img {
-      height: 100%;
-      position: right;
-    }
   }
-
-  @media (min-width: 750px) {
-    .es-cross__name {
-      height: unset;
-    }
-  }
-
 }

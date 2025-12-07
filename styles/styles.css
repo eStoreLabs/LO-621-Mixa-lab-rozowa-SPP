@@ -490,6 +490,36 @@ body {
 #es-rc #es-rc-content .es-products__single:nth-child(3) {
   background-color: #f1aeac;
 }
+@media (min-width: 720px) {
+  #es-rc #es-rc-content .es-products {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #es-rc #es-rc-content .es-products__bg {
+    height: 100%;
+  }
+  #es-rc #es-rc-content .es-products__bg img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #es-rc #es-rc-content .es-products .es-header {
+    padding-inline: unset;
+  }
+  #es-rc #es-rc-content .es-products__single {
+    border-radius: 0 8px;
+    font-size: 18px;
+  }
+  #es-rc #es-rc-content .es-products__left {
+    width: 46%;
+  }
+  #es-rc #es-rc-content .es-products__right {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 #es-rc #es-rc-content .es-ekspert__left {
   border-radius: 0 20px 0 0;
   overflow: hidden;
@@ -535,6 +565,21 @@ body {
   height: 80px;
   display: grid;
   place-items: center;
+}
+@media (min-width: 720px) {
+  #es-rc #es-rc-content .es-ekspert {
+    display: flex;
+  }
+  #es-rc #es-rc-content .es-ekspert__left {
+    width: 54%;
+  }
+  #es-rc #es-rc-content .es-ekspert__left img {
+    height: 100%;
+    position: right;
+  }
+  #es-rc #es-rc-content .es-ekspert__right {
+    width: 46%;
+  }
 }
 @media (max-width: 720px) {
   #es-rc #es-rc-content .es-kv__packshot img {
@@ -621,51 +666,5 @@ body {
   }
   #es-rc #es-rc-content .es-features__text {
     font-size: 1.5em;
-  }
-  #es-rc #es-rc-content .es-products {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  #es-rc #es-rc-content .es-products__bg {
-    height: 100%;
-  }
-  #es-rc #es-rc-content .es-products__bg img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #es-rc #es-rc-content .es-products .es-header {
-    padding-inline: unset;
-  }
-  #es-rc #es-rc-content .es-products__single {
-    border-radius: 0 8px;
-    font-size: 18px;
-  }
-  #es-rc #es-rc-content .es-products__left {
-    width: 46%;
-  }
-  #es-rc #es-rc-content .es-products__right {
-    width: 54%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #es-rc #es-rc-content .es-ekspert {
-    display: flex;
-  }
-  #es-rc #es-rc-content .es-ekspert__left {
-    width: 54%;
-  }
-  #es-rc #es-rc-content .es-ekspert__right {
-    width: 46%;
-  }
-  #es-rc #es-rc-content .es-ekspert__left img {
-    height: 100%;
-    position: right;
-  }
-}
-@media (min-width: 750px) {
-  #es-rc #es-rc-content .es-cross__name {
-    height: unset;
   }
 }/*# sourceMappingURL=styles.css.map */
