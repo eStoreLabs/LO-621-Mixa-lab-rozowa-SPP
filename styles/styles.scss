@@ -320,21 +320,24 @@ body {
     &__left {
       display: flex;
       flex-direction: column;
-      padding: $padding-XL $padding-L;
+      // padding: $padding-XL $padding-L;
       gap: $padding-M;
-      max-width: 444px;
+      // max-width: 444px;
       &__wrapper {
-        border-radius: 0 $padding-XS 0 0;
+        // border-radius: 0 $padding-XS 0 0;
         background-color: $color-pink;
         color: $color-white;
-        padding: $padding-L $padding-S;
+        // padding: $padding-L $padding-S;
         &__header {
-          max-width: 350px;
+          // max-width: 350px;
+          padding: $padding-S;
+          text-align: center;
         }
       }
       &__description {
         padding: 0 $padding-S;
         font-size: calc(1.2 * $fs-base);
+        text-align: center;
         text-wrap: balance;
       }
     }
@@ -435,11 +438,18 @@ body {
     @media (min-width: 576px) {
       overflow: hidden;
       &__left {
-        padding-left: 0;
+        padding: $padding-XL $padding-L 0 $padding-L;
+        &__wrapper {
+          border-radius: $padding-XS 0;
+        }
+        &__description {
+          max-width: 440px;
+          margin: auto;
+        }
       }
       &__bg {
         img {
-          height: 123%;
+          height: 117%;
         }
       }
       &__wrapper {
@@ -475,12 +485,23 @@ body {
       &__left {
         width: 40%;
         gap: $padding-L;
-        padding-left: 0;
+        padding: 0;
         &__wrapper {
-          padding: $padding-M $padding-L;
+          border-radius: 0 $padding-XS 0 0;
+          &__header {
+            text-align: left;
+            padding-inline: $padding-L;
+            .es-header--bold {
+              display: block;
+            }
+          }
         }
+
         &__description {
           padding-left: $padding-L;
+          margin: 0;
+          text-align: left;
+          max-width: 290px;
         }
       }
 
