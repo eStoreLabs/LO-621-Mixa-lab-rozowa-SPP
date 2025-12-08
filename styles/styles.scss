@@ -22,12 +22,6 @@ $padding-4XL: 64px;
 $box-shadow: 1px 1px 15px 3px rgba(0, 0, 1, 0.1);
 $transition: all 0.2s ease-in-out;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 #es-rc #es-rc-content {
   font-family: $ff-base;
   font-size: $fs-base;
