@@ -115,6 +115,9 @@
   }
 }
 @media (min-width: 1200px) {
+  #es-rc #es-rc-content .es-header--bold {
+    font-size: 16px;
+  }
   #es-rc #es-rc-content .es-kv {
     display: flex;
     position: relative;
@@ -258,6 +261,7 @@
   #es-rc #es-rc-content .es-features__reference {
     padding: 0;
     margin: 0;
+    font-size: 9px;
     text-align: left;
     padding-left: 20px;
   }
@@ -469,6 +473,7 @@
   font-size: 15.4px;
   padding: 8px 32px;
   text-decoration: none;
+  text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 }
 #es-rc #es-rc-content .es-cross__link:hover {
@@ -513,6 +518,68 @@
   }
   #es-rc #es-rc-content .es-cross__desc {
     height: 3em;
+  }
+  #es-rc #es-rc-content .es-cross__link {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #es-rc #es-rc-content .es-cross {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 32px;
+  }
+  #es-rc #es-rc-content .es-cross .es-header {
+    font-size: 16px;
+  }
+  #es-rc #es-rc-content .es-cross__left {
+    width: 32%;
+    gap: 32px;
+    padding: 0;
+  }
+  #es-rc #es-rc-content .es-cross__left__wrapper {
+    border-radius: 0 8px 0 0;
+  }
+  #es-rc #es-rc-content .es-cross__left__wrapper__header {
+    text-align: left;
+    padding-inline: 32px;
+  }
+  #es-rc #es-rc-content .es-cross__left__wrapper__header .es-header--bold {
+    display: block;
+  }
+  #es-rc #es-rc-content .es-cross__left__description {
+    padding-left: 32px;
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    max-width: 290px;
+  }
+  #es-rc #es-rc-content .es-cross__bg img {
+    height: 113%;
+  }
+  #es-rc #es-rc-content .es-cross__wrapper {
+    padding: 0 16px;
+    width: 67%;
+    gap: 0;
+    justify-content: space-between;
+  }
+  #es-rc #es-rc-content .es-cross__single {
+    -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 10px;
+  }
+  #es-rc #es-rc-content .es-cross__name {
+    font-size: 14px;
+  }
+  #es-rc #es-rc-content .es-cross__desc {
+    font-size: 11px;
+    height: unset;
   }
 }
 #es-rc #es-rc-content .es-products .es-header {
@@ -580,13 +647,13 @@
   }
   #es-rc #es-rc-content .es-products__single {
     border-radius: 0 8px;
-    font-size: 18px;
+    font-size: 14px;
   }
   #es-rc #es-rc-content .es-products__left {
-    width: 46%;
+    width: 48%;
   }
   #es-rc #es-rc-content .es-products__right {
-    width: 54%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -653,4 +720,12 @@
   #es-rc #es-rc-content .es-ekspert__right {
     width: 46%;
   }
+  #es-rc #es-rc-content .es-ekspert__icon {
+    width: 65px;
+    height: 65px;
+  }
+  #es-rc #es-rc-content .es-ekspert__single {
+    font-size: 11px;
+    padding: 0;
+  }  
 }
